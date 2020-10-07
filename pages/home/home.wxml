@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<button size="mini" bindtap="increase">+</button>
+<view bindtap="handle">{{count}}</view>
+<button size="mini" bindtap="descrease">-</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="mini">获取用户信息</button>
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<view wx:for="{{list}}">{{item.title}}</view>
