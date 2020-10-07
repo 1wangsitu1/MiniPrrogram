@@ -5,4 +5,5 @@
 <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="mini">获取用户信息</button>
 <open-data type="userNickName"></open-data>
 <open-data type="userAvatarUrl"></open-data>
-<view wx:for="{{list}}">{{item.title}}</view>
+<view wx:for="{{list}}">{{item.title}}{{item.item_url}}</view>
+
