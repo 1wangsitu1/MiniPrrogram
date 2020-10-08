@@ -1,0 +1,13 @@
+/* pages/wxss/wxss.wxss */
+.box1{
+  background-color: tomato;
+  width: 150px ;
+  height: 150px ;
+  font-size: 20px;
+}
+.box2{
+  background-color: violet;
+  width: 300rpx;
+  height: 300rpx;
+  font-size: 40px;
+}

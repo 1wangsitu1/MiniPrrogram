@@ -1,0 +1,3 @@
+<!--pages/wxss/wxss.wxml-->
+<view class="box1">盒子一</view>
+<view class="box2">盒子er</view>

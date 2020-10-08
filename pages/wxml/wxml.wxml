@@ -1,0 +1,3 @@
+<!--pages/wxml/wxml.wxml-->
+<text>pages/wxml/wxml.wxml</text>
+<view>{{nowdate}}</view>

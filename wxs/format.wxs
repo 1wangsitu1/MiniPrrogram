@@ -1,0 +1,6 @@
+function numformat(num,diot) {
+  return   num.toFixed(diot)
+  }
+module.exports = {
+ numformat:numformat
+}

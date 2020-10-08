@@ -1,0 +1,4 @@
+<input type="text"/>
+<input confirm-type="search"></input>
+<input confirm-type="done"></input>
+<input confirm-type="send"></input>
