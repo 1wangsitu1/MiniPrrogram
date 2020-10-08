@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/img/img",
+    "pages/views/views",
+    "pages/button/button",
+    "pages/text/text",
     "pages/home/home",
     "pages/about/about"
   ],
