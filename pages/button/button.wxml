@@ -1,0 +1,5 @@
+<!--pages/button/button.wxml-->
+<button type="primary">按钮</button>
+<button type="warn">按钮</button>
+<button loading>按钮</button>
+<button hover-class="active">按钮</button>

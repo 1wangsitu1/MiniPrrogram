@@ -1,0 +1,5 @@
+<!--pages/img/img.wxml-->
+<!-- img默认有自己的大小 -->
+<image src="{{imgpath}}"></image>
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1602150609660&di=61cfeb824c2d0ba8ba6efaddfa0bc856&imgtype=0&src=http%3A%2F%2Fa1.att.hudong.com%2F05%2F00%2F01300000194285122188000535877.jpg" bindload="handimg" wx:for="{{2}}" lazy-load show-menu-by-longpress></image>
+<button bindtap="pic">拍照或选取</button>

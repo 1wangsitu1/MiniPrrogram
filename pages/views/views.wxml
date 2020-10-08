@@ -1,0 +1,3 @@
+<!--pages/views/views.wxml-->
+<text>pages/views/views.wxml</text>
+<view class="yuan"  hover-class="dian" hover-stay-time="2000 " hover-start-time="2000">njdsi</view>

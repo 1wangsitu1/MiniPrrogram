@@ -1,0 +1,5 @@
+/* pages/button/button.wxss */
+.active{
+  color: white;
+  background-color: blueviolet;
+}

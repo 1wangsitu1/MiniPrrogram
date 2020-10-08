@@ -1,0 +1,11 @@
+<!--pages/text/text.wxml-->
+<text>ni hao</text>
+<text>hello world\n</text>
+<!-- 默认文本不能选中 -->
+<text selectable="{{true}}">哈哈哈\n</text>
+<text selectable>呵呵呵\n</text><!-- 有属性也是true -->
+<!-- space 决定空格的大小 -->
+<text>我的 手机\n</text>
+<text space="nbsp">我的 手机\n</text>
+<text space="ensp">我的 手机\n</text>
+<text space="emsp">我的 手机</text>

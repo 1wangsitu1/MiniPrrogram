@@ -1,0 +1,11 @@
+/* pages/views/views.wxss */
+
+.yuan{
+  width: 90px;
+  height: 90px;
+  background-color: thistle;
+}
+.dian{
+  font-size: 23px;
+   background-color: rgb(80, 21, 11);
+ }
