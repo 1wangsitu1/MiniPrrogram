@@ -21,6 +21,20 @@ Page({
     
     console.log(e.detail.userInfo)  
 },
+currclick(e){
+console.log(e.detail.index);
+
+},
+homeclick(){
+const mysel=this.selectComponent('#sel')
+/* mysel.setData({
+  counter:mysel.data.counter+1
+}) */
+console.log(mysel);
+
+mysel.add(10)
+
+},
 //监听页面的的生命周期
 onLoad(){
   let that=this;

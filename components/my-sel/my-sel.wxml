@@ -1,0 +1,2 @@
+<!--components/my-sel/my-sel.wxml-->
+<view>当前组件:{{counter}}</view>

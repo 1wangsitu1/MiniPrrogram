@@ -2,7 +2,9 @@
 <button size="mini" bindtap="increase">+</button>
 <view bindtap="handle">{{count}}</view>
 <button size="mini" bindtap="descrease">-</button>
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="mini">获取用户信息</button>
-<open-data type="userNickName"></open-data>
-<open-data type="userAvatarUrl"></open-data>
-<view wx:for="{{list}}">{{item.title}}</view>
+
+<!-- <tab_bar mess="{{['流行','新款','精品']}}" messclass="red"></tab_bar>
+<tab_bar mess="{{['流行','新款','精品']}}" messclass="blue"></tab_bar> -->
+<tab_bar mess="{{['流行','新款','精品']}}" bind:itemIndex="currclick"></tab_bar>
+<my-sel id="sel"></my-sel>
+<button bind:tap="homeclick" >组件+1</button>

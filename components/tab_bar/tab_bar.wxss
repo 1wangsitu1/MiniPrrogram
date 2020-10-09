@@ -1,0 +1,17 @@
+/* components/tab_bar/tab_bar.wxss */
+.tab_bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height:49rpx;
+}
+.bar_item{
+  padding: 10rpx 0;
+}
+.active{
+
+
+  color: rgb(241, 125, 144);
+  border-bottom: 3rpx solid pink;
+}

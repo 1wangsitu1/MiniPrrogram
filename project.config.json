@@ -35,7 +35,7 @@
     "packNpmRelationList": []
   },
   "compileType": "miniprogram",
-  "libVersion": "2.12.2",
+  "libVersion": "2.13.0",
   "appid": "wxf37d27a01a087e3a",
   "projectname": "vxprogram",
   "debugOptions": {

@@ -1,1 +1,9 @@
 /* pages/home/home.wxss */
+/* .red{
+  font-size: 20rpx;
+  background-color: rgb(235, 17, 118);
+}
+.blue{
+  font-size: 36rpx;
+  background-color: cornflowerblue;
+} */

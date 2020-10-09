@@ -1,0 +1,8 @@
+<!--components/tab_bar/tab_bar.wxml-->
+<view class="tab_bar messclass"  >
+ <block wx:for="{{mess}}" wx:key="{{index}}">
+  <view class=" bar_item {{currindex == index ? 'active': ''}}" bindtap="handleclick" data-index="{{index}}">{{item}}</view>
+  </block>
+ 
+</view>
+
