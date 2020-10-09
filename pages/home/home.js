@@ -1,4 +1,5 @@
 //注册页面
+import {request} from "../../serveice/network"
 Page({
   //初始化数据
   data:{
@@ -24,7 +25,7 @@ Page({
 //监听页面的的生命周期
 onLoad(){
   let that=this;
-wx.request({
+/* wx.request({
   url: 'http://152.136.185.210:8000/api/w6/recommend',
  
   success(res){
@@ -33,7 +34,30 @@ wx.request({
       list:res.data.data.list
     })
   }
-})
+}) */
+/* wx.request({
+  url: 'http://httpbin.org/post',
+  data:{
+    name:'jack',
+    age:16
+  },
+  method:'POST',
+  success(res){
+    console.log(res);
+    
+  }
+}) */
+request({
+  url: 'http://httpbin.org/post',
+  data:{
+    name:'jack',
+    age:16
+  },
+  method:'POST',
+}).then(data=>{console.log(data)})
+  .catch(err=>console.log(err)
+  )
+
 },
 onHide(){
 
