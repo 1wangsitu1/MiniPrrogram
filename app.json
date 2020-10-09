@@ -11,23 +11,6 @@
     "enablePullDownRefresh": true,
     "backgroundTextStyle": "dark"
   },
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "assets/tabbar/home.png",
-        "selectedIconPath": "assets/tabbar/home_active.png"
-      },
-      {
-        "pagePath": "pages/about/about",
-        "text": "关于",
-        "iconPath": "assets/tabbar/profile.png",
-        "selectedIconPath": "assets/tabbar/profile_active.png"
-      }
-    ],
-    "selectedColor": "#FF1493",
-    "backgroundColor": "#0F00FF"
-  },
+  
   "sitemapLocation": "sitemap51.json"
 }

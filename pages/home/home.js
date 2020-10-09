@@ -1,71 +1,44 @@
-//注册页面
+
+const app=getApp()//获取APP产生的示例对象 
 Page({
-  //初始化数据
-  data:{
-    count:0,
-    list:[]
-  },
-  increase(){
-    this.setData({
-     count: this.data.count+1
-    })
-  },
-  descrease(){
-   this.setData({
-     count:this.data.count-1
-   })
-  },
-  getUserInfo(e) {
-    // 拿到用户信息进行下一步处理
-    console.log(e);
+  tan(){
+  wx.showToast({
+    title: 'hello World',
+    duration:1500,
+    icon:'loading',
+    image:'../../assets/tabbar/angel.gif'
+  })
     
-    console.log(e.detail.userInfo)  
-},
-//监听页面的的生命周期
-onLoad(){
-  let that=this;
-wx.request({
-  url: 'http://152.136.185.210:8000/api/w6/recommend',
- 
-  success(res){
-    console.log(res);
-    that.setData({
-      list:res.data.data.list
+  },
+/*   load 不会消失必须手动调用hideloading(),toast过一会会消失 */
+  load(){
+    wx.showLoading({
+      title: '正在加载',
     })
+  },
+  bottom(){
+    wx.showActionSheet({
+      itemList: ['拍照','从相册中选取'],
+      success (res) {
+        /* console.log(res.tapIndex) */
+        switch(res.tapIndex){
+          case 0:
+          console.log('拍照');
+          break;
+          case 1:
+            console.log('选取');
+            break;
+            
+          
+        }
+      },
+    })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '我的小程序',
+      path: '../about',
+      imageUrl:'../../assets/picture/8.jpg'
+    }
   }
 })
-},
-onHide(){
-
-},//初次渲染完成
-onReady(){},
-onShow(){},
-onUnload(){
-  console.log('卸载了');
-  
-},
-//监听wxml
-handle(){
-  console.log('发生了点击');
-  
-}
-,
-onPageScroll(obj){
-//console.log(obj);
-
-},
-onReachBottom(){
-  console.log('到底了');
-  
-},
-onPullDownRefresh(){
-console.log('页面刷新了');
-
-}
-
-
-})
-//getApp()获取App()的实例对象
-const app=getApp()
-console.log(app.globleData.name);
-
